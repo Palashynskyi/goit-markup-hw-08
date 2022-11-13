@@ -1,1 +1,2 @@
-# goit-markup-hw-08
+# goit-markup-hw-02
+Home work for goit study

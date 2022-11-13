@@ -1,0 +1,20 @@
+.filter-tittle {
+    color: var(--second-btn-color);
+}
+
+.filter {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.filter__item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
