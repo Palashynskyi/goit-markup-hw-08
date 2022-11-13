@@ -1,34 +1,85 @@
 .hero {
-    position: relative;
-    content: "";
-    width: 100%;
-    padding: 200px 0;
+    max-width: 480px;
+    padding: 118px 0;
     margin: 0 auto;
     background-color: var(--head-footter-bgc);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/bagraund-sm.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-size: cover;
+    background-position: center;
     text-align: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-sm@2x.jpg);
+            background-size: cover;
+        }
+    
+    
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-md.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 768px) and (min-resolution: 192dpi),
+        screen and (min-width: 768px) and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-md@2x.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 1600px;
+            height: 600px;
+            padding: 200px 0;
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-lg.jpg);
+            background-size: cover;
+        }
+    
+        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 1200px) and (min-resolution: 192dpi),
+        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-lg@2x.jpg);
+            background-size: cover;
+        }
 }
 
 .hero__tittle {
-    display: block;
-    max-width: 696px;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    color: var(--second-btn-color);
+    margin: 0 auto 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
+    letter-spacing: 1.615;
+    text-transform: uppercase;    
+    color: var(--second-btn-color);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.3636;
+    }
 }
 
 .hero-btn {

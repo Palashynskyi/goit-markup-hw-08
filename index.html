@@ -14,11 +14,16 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!--================================= header =================================-->
     <header class="header">
       <div class="header__container">
         <nav class="nav">
           <a href="./index.html" class="logo"><span class="logo__text-web">Web</span><span class="logo__text-studio">Studio</span></a>
+          <button class="header_burger--menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header_burger--icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-menu-burg"></use>
+            </svg>
+          </button>
           <ul class="nav__list">
             <li>
               <a href="./index.html" class="nav__item nav__item--current">Студія</a>
@@ -31,9 +36,9 @@
             </li>
           </ul>
         </nav>
-        <!-- Header contacts -->
+        <!-- =============================Header contacts============================ -->
         <ul class="contact-nav">
-          <li>
+          <li class="contact-nav__list">
             <a href="mailto:info@devstudio.com" class="contact-nav__item">
               <svg class="contact-nav__icon contact-nav__icon-mail" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -41,7 +46,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="">
             <a href="tel:+380961111111" class="contact-nav__item">
               <svg class="contact-nav__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -59,7 +64,8 @@
           <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open type="button" class="button button--hero-btn" name="Замовити послугу">Замовити послугу</button>
         </div>
-        <!-- Modal  -->
+      </section>
+              <!-- Modal  -->
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
             <button data-modal-close class="btn-modal-close">
@@ -117,11 +123,11 @@
           </div>
         </div>
       </section>
+
       <!-- Content advantages -->
       <section class="section section--no-padding">
         <div class="advantages">
           <div class="container">
-            <!-- Заголовок "Наші переваги"  невидимий  -->
             <h2 class="visually-hidden">Наші переваги</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
@@ -157,13 +163,17 @@
         </div>
       </section>
       <!-- About work -->
-      <section class="section">
+      <section class="section section_about-work">
         <div class="container">
           <h2 class="content-tittle">Чим ми займаємося</h2>
           <ul class="work-lists">
             <li class="work-item">
               <div class="work-item__overlay">
-                <img src="./images/box1.jpg" alt="Фото процесу роботи співробітника" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-1-lg.webp 1x, ./images/speciality/box-1-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-1-lg.jpg 1x, ./images/speciality/box-1-lg@2x.jpg 2x" />
+                  <img src="#" alt="Человек верстает код на клавиатуре перед дисплеем" class="speciality-list__img" />
+                </picture>
                 <div class="work-item-comment">
                   <p class="work-item-text">Десктопні додатки</p>
                 </div>
@@ -171,7 +181,11 @@
             </li>
             <li class="work-item">
               <div class="work-item__overlay">
-                <img src="./images/box2.jpg" alt="Фото процесу роботи співробітника" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-2-lg.webp 1x, ./images/speciality/box-2-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-2-lg.jpg 1x, ./images/speciality/box-2-lg@2x.jpg 2x" />
+                  <img src="#" alt="Человек верстает код на клавиатуре перед дисплеем" class="speciality-list__img" />
+                </picture>
                 <div class="work-item-comment">
                   <p class="work-item-text">Мобільні додатки</p>
                 </div>
@@ -179,7 +193,11 @@
             </li>
             <li class="work-item">
               <div class="work-item__overlay">
-                <img src="./images/box3.jpg" alt="Фото процесу роботи співробітника" width="370" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-3-lg.webp 1x, ./images/speciality/box-3-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/speciality/box-3-lg.jpg 1x, ./images/speciality/box-3-lg@2x.jpg 2x" />
+                  <img src="#" alt="Человек верстает код на клавиатуре перед дисплеем" class="speciality-list__img" />
+                </picture>
                 <div class="work-item-comment">
                   <p class="work-item-text">Дизайнерські рішенння</p>
                 </div>
@@ -195,7 +213,15 @@
           <ul class="about__list">
             <li class="about__item">
               <div class="about__overlay">
-                <img src="./images/img1.jpg" alt="Фото співробітника" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-1-lg.webp 1x, ./images/team/team-1-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-1-lg.jpg 1x, ./images/team/team-1-lg@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-1-md.webp 1x, ./images/team/team-1-md@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-1-md.jpg 1x, ./images/team/team-1-md@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-1-sm.webp 1x, ./images/team/team-1-sm@2x.webp 2x" type="image/webp" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-1-sm.jpg 1x, ./images/team/team-1-sm@2x.jpg 2x" />
+                  <img src="./images/team/team-1-sm.jpg" alt="Портрет человека" />
+                </picture>
                 <div class="about__box">
                   <h3 class="about__name">Ігор Дем'яненко</h3>
                   <p class="about__position" lang="en">Product Designer</p>
@@ -236,7 +262,15 @@
             </li>
             <li class="about__item">
               <div class="about__overlay">
-                <img src="./images/img2.jpg" alt="Фото співробітника" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-2-lg.webp 1x, ./images/team/team-2-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-2-lg.jpg 1x, ./images/team/team-2-lg@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-2-md.webp 1x, ./images/team/team-2-md@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-2-md.jpg 1x, ./images/team/team-2-md@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-2-sm.webp 1x, ./images/team/team-2-sm@2x.webp 2x" type="image/webp" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-2-sm.jpg 1x, ./images/team/team-2-sm@2x.jpg 2x" />
+                  <img src="./images/team/team-2-sm.jpg" alt="Портрет человека" />
+                </picture>
                 <div class="about__box">
                   <h3 class="about__name">Ольга Рєпіна</h3>
                   <p class="about__position" lang="en">Frontend Developer</p>
@@ -275,7 +309,15 @@
             </li>
             <li class="about__item">
               <div class="about__overlay">
-                <img src="./images/img3.jpg" alt="Фото співробітника" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-3-lg.webp 1x, ./images/team/team-3-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-3-lg.jpg 1x, ./images/team/team-3-lg@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-3-md.webp 1x, ./images/team/team-3-md@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-3-md.jpg 1x, ./images/team/team-3-md@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-3-sm.webp 1x, ./images/team/team-3-sm@2x.webp 2x" type="image/webp" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-3-sm.jpg 1x, ./images/team/team-3-sm@2x.jpg 2x" />
+                  <img src="./images/team/team-3-sm.jpg" alt="Портрет человека" />
+                </picture>
                 <div class="about__box">
                   <h3 class="about__name">Микола Тарасов</h3>
                   <p class="about__position" lang="en">Marketing</p>
@@ -314,7 +356,15 @@
             </li>
             <li class="about__item">
               <div class="about__overlay">
-                <img src="./images/img4.jpg" alt="Фото співробітника" width="270" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-4-lg.webp 1x, ./images/team/team-4-lg@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 1200px)" srcset="./images/team/team-4-lg.jpg 1x, ./images/team/team-4-lg@2x.jpg 2x" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-4-md.webp 1x, ./images/team/team-4-md@2x.webp 2x" type="image/webp" />
+                  <source media="(min-width: 768px)" srcset="./images/team/team-4-md.jpg 1x, ./images/team/team-4-md@2x.jpg 2x" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-4-sm.webp 1x, ./images/team/team-4-sm@2x.webp 2x" type="image/webp" />
+                  <source media="(max-width: 767px)" srcset="./images/team/team-4-sm.jpg 1x, ./images/team/team-4-sm@2x.jpg 2x" />
+                  <img src="./images/team/team-4-sm.jpg" alt="Портрет человека" />
+                </picture>
                 <div class="about__box">
                   <h3 class="about__name">Михайло Єрмаков</h3>
                   <p class="about__position" lang="en">UI Designer</p>
@@ -430,8 +480,8 @@
         </div>
         <div class="joined-thumb">
           <h2 class="joined-tittle">Приєднуйтесь</h2>
-          <!-- __________________________________________BLOCK-2_______________________________________ -->
-          <ul class="social-list">
+          <!-- __________________________________________BLOCK-2_______________________________________  -->
+          <ul class="social-list social-list--margin">
             <li>
               <a href="" class="social-list__link social-list__link--color">
                 <svg class="social-list__icon social-list__icon--white" width="20" height="20">
@@ -469,17 +519,29 @@
             <label for="#" class="subscribe-form__label">
               <input type="email" name="email" placeholder="E-mail" />
             </label>
-            <button type="submit" class="button button--footer-btn">
-              Підписатися
-              <svg class="button-icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="button-wraper">
+              <button type="submit" class="button button--footer-btn">
+                Підписатися
+                <svg class="button-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
-     <script defer src="js/mobile-menu.js"></script>
+
+    <!-- header_burger--menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="button-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+    </div>
+    <!-- _______________________________ -->
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

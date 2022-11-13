@@ -20,6 +20,11 @@
       <div class="header__container">
         <nav class="nav">
           <a href="./index.html" class="logo"><span class="logo__text-web">Web</span><span class="logo__text-studio">Studio</span></a>
+          <button class="header_burger--menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header_burger--icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-menu-burg"></use>
+            </svg>
+          </button>
           <ul class="nav__list">
             <li>
               <a href="./index.html" class="nav__item">Студія</a>
@@ -32,9 +37,9 @@
             </li>
           </ul>
         </nav>
-        <!-- Header contacts -->
+        <!-- =============================Header contacts============================ -->
         <ul class="contact-nav">
-          <li>
+          <li class="contact-nav__list">
             <a href="mailto:info@devstudio.com" class="contact-nav__item">
               <svg class="contact-nav__icon contact-nav__icon-mail" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -42,7 +47,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="">
             <a href="tel:+380961111111" class="contact-nav__item">
               <svg class="contact-nav__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -58,154 +63,226 @@
       <!-- main nav -->
       <!-- Work list filter -->
       <section class="section">
-          <div class="container">
-            <h1 class="visually-hidden">Наші роботи</h1>
-            <ul class="filter">
-              <li class="filter__item">
-                <button type="button" class="button button--filter-btn" aria-label="Усі">Усі</button>
-              </li>
-              <li class="filter__item">
-                <button type="button" class="button--filter-btn" aria-label="Веб-сайти">Веб-сайти</button>
-              </li>
-              <li class="filter__item">
-                <button type="button" class="button--filter-btn" aria-label="Додатки">Додатки</button>
-              </li>
-              <li class="filter__item">
-                <button type="button" class="button--filter-btn" aria-label="Дизайн">Дизайн</button>
-              </li>
-              <li class="filter__item">
-                <button type="button" class="button--filter-btn" aria-label="Маркетинг">Маркетинг</button>
-              </li>
-            </ul>
-        <!-- Work list -->
-            <ul class="work-list">
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/techno.jpg" alt="Ноутбук з відкритою веб сторінкою на екрані" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Технокряк</h2>
-                    <p class="work-list__position">Веб-сайт</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/orlean.jpg" alt="Дві людини грають в баскетбол" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Постер New Orlean vs Golden Star</h2>
-                    <p class="work-list__position">Дизайн</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/seafood.jpg" alt="Логотип ресторану" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Ресторан Seafood</h2>
-                    <p class="work-list__position">Додаток</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/prime.jpg" alt="Чорні навушники на сірому фоні" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Проєкт Prime</h2>
-                    <p class="work-list__position">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/boxes.jpg" alt="Дві картонні коробки" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Проєкт Boxes</h2>
-                    <p class="work-list__position">Дадаток</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__items">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/borders.jpg" alt="Екран з відображеним веб-сайтом з аналітикою" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Insperation has no Borders</h2>
-                    <p class="work-list__position">Веб-сайт</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/limited.jpg" alt="Відкритий глянцевий журнал" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Видання Limited Edition</h2>
-                    <p class="work-list__position">Дизайн</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/lab.jpg" alt="Ярлик на якому забражено лого компанії" width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Проєкт LAB</h2>
-                    <p class="work-list__position">Маркетинг</p>
-                  </div>
-                </a>
-              </li>
-              <li class="work-list__item">
-                <a href="#" class="work-list__link">
-                  <div class="work-list__thumb">
-                    <img src="./images/business.jpg" alt="Людина працює з ноутбуком та на екрані відображений додаток " width="370" height="294" />
-                    <p class="work-list__text-overlay">
-                      Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                    </p>
-                  </div>
-                  <div class="work-list__card">
-                    <h2 class="work-list__name">Growing Business</h2>
-                    <p class="work-list__position">Додаток</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
+        <div class="container">
+          <h1 class="visually-hidden">Наші роботи</h1>
+          <ul class="filter">
+            <li class="filter__item">
+              <button type="button" class="button button--filter-btn" aria-label="Усі">Усі</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button--filter-btn" aria-label="Веб-сайти">Веб-сайти</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button--filter-btn" aria-label="Додатки">Додатки</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button--filter-btn" aria-label="Дизайн">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="button--filter-btn" aria-label="Маркетинг">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Work list -->
+          <ul class="work-list">
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-1-lg.webp 1x, ./images/portfolio/portfolio-1-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-1-lg.jpg 1x, ./images/portfolio/portfolio-1-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-1-md.webp 1x, ./images/portfolio/portfolio-1-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-1-md.jpg 1x, ./images/portfolio/portfolio-1-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-1-sm.webp 1x, ./images/portfolio/portfolio-1-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-1-sm.jpg 1x, ./images/portfolio/portfolio-1-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-1-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Технокряк</h2>
+                  <p class="work-list__position">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-2-lg.webp 1x, ./images/portfolio/portfolio-2-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-2-lg.jpg 1x, ./images/portfolio/portfolio-2-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-2-md.webp 1x, ./images/portfolio/portfolio-2-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-2-md.jpg 1x, ./images/portfolio/portfolio-2-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-2-sm.webp 1x, ./images/portfolio/portfolio-2-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-2-sm.jpg 1x, ./images/portfolio/portfolio-2-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-2-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="work-list__position">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-3-lg.webp 1x, ./images/portfolio/portfolio-3-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-3-lg.jpg 1x, ./images/portfolio/portfolio-3-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-3-md.webp 1x, ./images/portfolio/portfolio-3-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-3-md.jpg 1x, ./images/portfolio/portfolio-3-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-3-sm.webp 1x, ./images/portfolio/portfolio-3-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-3-sm.jpg 1x, ./images/portfolio/portfolio-3-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-3-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Ресторан Seafood</h2>
+                  <p class="work-list__position">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-4-lg.webp 1x, ./images/portfolio/portfolio-4-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-4-lg.jpg 1x, ./images/portfolio/portfolio-4-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-4-md.webp 1x, ./images/portfolio/portfolio-4-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-4-md.jpg 1x, ./images/portfolio/portfolio-4-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-4-sm.webp 1x, ./images/portfolio/portfolio-4-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-4-sm.jpg 1x, ./images/portfolio/portfolio-4-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-4-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Проєкт Prime</h2>
+                  <p class="work-list__position">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-5-lg.webp 1x, ./images/portfolio/portfolio-5-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-5-lg.jpg 1x, ./images/portfolio/portfolio-5-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-5-md.webp 1x, ./images/portfolio/portfolio-5-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-5-md.jpg 1x, ./images/portfolio/portfolio-5-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-5-sm.webp 1x, ./images/portfolio/portfolio-5-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-5-sm.jpg 1x, ./images/portfolio/portfolio-5-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-5-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Проєкт Boxes</h2>
+                  <p class="work-list__position">Дадаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__items">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-6-lg.webp 1x, ./images/portfolio/portfolio-6-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-6-lg.jpg 1x, ./images/portfolio/portfolio-6-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-6-md.webp 1x, ./images/portfolio/portfolio-6-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-6-md.jpg 1x, ./images/portfolio/portfolio-6-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-6-sm.webp 1x, ./images/portfolio/portfolio-6-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-6-sm.jpg 1x, ./images/portfolio/portfolio-6-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-6-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Insperation has no Borders</h2>
+                  <p class="work-list__position">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-7-lg.webp 1x, ./images/portfolio/portfolio-7-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-7-lg.jpg 1x, ./images/portfolio/portfolio-7-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-7-md.webp 1x, ./images/portfolio/portfolio-7-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-7-md.jpg 1x, ./images/portfolio/portfolio-7-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-7-sm.webp 1x, ./images/portfolio/portfolio-7-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-7-sm.jpg 1x, ./images/portfolio/portfolio-7-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-7-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Видання Limited Edition</h2>
+                  <p class="work-list__position">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-8-lg.webp 1x, ./images/portfolio/portfolio-8-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-8-lg.jpg 1x, ./images/portfolio/portfolio-8-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-8-md.webp 1x, ./images/portfolio/portfolio-8-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-8-md.jpg 1x, ./images/portfolio/portfolio-8-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-8-sm.webp 1x, ./images/portfolio/portfolio-8-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-8-sm.jpg 1x, ./images/portfolio/portfolio-8-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-8-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Проєкт LAB</h2>
+                  <p class="work-list__position">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-list__item">
+              <a href="#" class="work-list__link">
+                <div class="work-list__thumb">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-9-lg.webp 1x, ./images/portfolio/portfolio-9-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/portfolio-9-lg.jpg 1x, ./images/portfolio/portfolio-9-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-9-md.webp 1x, ./images/portfolio/portfolio-9-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)" srcset="./images/portfolio/portfolio-9-md.jpg 1x, ./images/portfolio/portfolio-9-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-9-sm.webp 1x, ./images/portfolio/portfolio-9-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)" srcset="./images/portfolio/portfolio-9-sm.jpg 1x, ./images/portfolio/portfolio-9-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-9-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                  <p class="work-list__text-overlay">
+                    Ресурс пропонуе комплексні пропозиціі з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="work-list__card">
+                  <h2 class="work-list__name">Growing Business</h2>
+                  <p class="work-list__position">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -214,7 +291,7 @@
       <div class="container container--flex">
         <div class="adress-thumb">
           <div class="footer-logo">
-            <a href="./index.html" class="link"><span class="footer-logo-web">Web</span><span class="logo-alter">Studio</span></a>
+            <a href="./index.html" class="link"><span class="footer-logo__text-web">Web</span><span class="footer-logo__text-studio">Studio</span></a>
           </div>
           <address>
             <ul class="adress-list">
@@ -234,8 +311,8 @@
         </div>
         <div class="joined-thumb">
           <h2 class="joined-tittle">Приєднуйтесь</h2>
-          <!-- __________________________________________BLOCK-2_______________________________________ -->
-          <ul class="social-list">
+          <!-- __________________________________________BLOCK-2_______________________________________  -->
+          <ul class="social-list social-list--margin">
             <li>
               <a href="" class="social-list__link social-list__link--color">
                 <svg class="social-list__icon social-list__icon--white" width="20" height="20">
@@ -273,12 +350,14 @@
             <label for="#" class="subscribe-form__label">
               <input type="email" name="email" placeholder="E-mail" />
             </label>
-            <button type="submit" class="button button--footer-btn">
-              Підписатися
-              <svg class="button-icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="button-wraper">
+              <button type="submit" class="button button--footer-btn">
+                Підписатися
+                <svg class="button-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>

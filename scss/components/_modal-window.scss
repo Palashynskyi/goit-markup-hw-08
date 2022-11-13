@@ -22,8 +22,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
 
     background: #FFFFFF;
@@ -31,6 +31,11 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--tran-dur-and-tim-fun);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .modal-tittle {
@@ -147,10 +152,15 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142;
+    font-size: 12px;
+    line-height: 1.166;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7142;
+    }
 }
 
 .user-policy-checkbox__frame {
