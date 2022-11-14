@@ -2,28 +2,32 @@
     display: flex;
     list-style: none;
     flex-wrap: wrap;
+    gap: 30px;
+    column-gap: 30px;
 }
 
 .work-list__item {
     position: relative;
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
     transition: box-shadow var(--tran-dur-and-tim-fun);
+    display: flex;
 
-    &:nth-child(3n) {
-        margin-right: 0;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
     }
 
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0px;
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);    
     }
 }
 
 .work-list__link {
-    display: block;
     text-decoration: none;
     color: inherit;
+
+    @media screen and (min-width: 768px) {
+        display: flex;    
+        flex-direction: column;
+    }
 
     &:hover, &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -75,6 +79,7 @@
     border-top: none;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-grow: 1;
 }
 
 .work-list__name {
