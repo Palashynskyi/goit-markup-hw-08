@@ -20,11 +20,12 @@
       <div class="header__container">
         <nav class="nav">
           <a href="./index.html" class="logo"><span class="logo__text-web">Web</span><span class="logo__text-studio">Studio</span></a>
-          <button class="header_burger--menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="header_burger--icon" width="40" height="40">
-              <use href="./images/sprite.svg#icon-menu-burg"></use>
-            </svg>
-          </button>
+            <button class="header_burger--menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="header_burger--icon" width="40" height="40">
+                <use href="./images/sprite.svg#icon-menu-burg"></use>
+              </svg>
+            </button>
+
           <ul class="nav__list">
             <li>
               <a href="./index.html" class="nav__item">Студія</a>
@@ -362,5 +363,63 @@
         </div>
       </div>
     </footer>
+  <!-- -------------------------mobile menu-------------------------------- -->
+
+    <!-- header_burger--menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="button-wrapper">
+        <button class="menu-toggle js-close-menu">
+          <svg class="button-icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+      </div>
+
+<!-- ___________________________________________________________________________ -->
+      <div class="mobile-nav--wrapper">
+        <ul class="mobile-nav list">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link link">Студия</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link link mobile-nav__link_current">Портфолио</a>
+          </li>
+          <li class="mobile-nav__item"><a href="" class="mobile-nav__link link">Контакты</a></li>
+        </ul>
+      </div>
+<!-- ____________________________________________________________________________ -->
+        <div class="mobile-contacts--wrapper">
+          <ul class="mobile-contacts-nav list">
+            <li class="mobile-contacts-nav__item  mobile-contacts-nav__item_tel">
+              <a href="tel:+380961111111" class="mobile-contacts-nav__link_tel link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts-nav__item ">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-nav__link_mail link"
+                > info@devstudio.com 
+              </a>
+            </li>
+          </ul>
+        </div> 
+<!-- _______________________________________________________________ -->
+        <div class="mobile-social--wrapper">
+          <ul class="list mobile-social">
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link link"> Instagram </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link link"> Twitter </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link link"> Facebook </a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link link"> LinkedIn </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

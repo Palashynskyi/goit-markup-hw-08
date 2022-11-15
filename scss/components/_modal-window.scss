@@ -22,8 +22,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    width: 98%;
+    min-height: 609px;
     padding: 40px;
 
     background: #FFFFFF;
@@ -191,9 +192,14 @@
 }
 
 .user-policy-checkbox__link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
+
 }
 
 .modal-button-send {
