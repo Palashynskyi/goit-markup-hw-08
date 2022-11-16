@@ -1,8 +1,8 @@
 .section {
-    padding: 0 0 60px 0;
+    padding: 60px  0 60px 0;
 
     @media screen and (min-width: 1200px) {
-        padding: 0 0 94px 0;
+        padding: 94px 0 94px 0;
     }
 }
 
@@ -19,14 +19,21 @@
     padding: 0 0 60px 0;
 
     @media screen and (min-width: 1200px) {
-        padding: 0 0 90px 0;
+        padding: 0 0 94px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0 94px 0;
     }
 }
 
 .section_about-work {
     display: none;
+    padding: 0 0 60px 0;
+
 
     @media screen and (min-width: 1200px) {
         display: block;
+        padding: 0 0 94px 0;
     }
 }

@@ -9,11 +9,12 @@
     font-size: 28px;
     line-height: 1.1785;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: #212121;
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1719;
@@ -47,11 +48,12 @@
     height: 100%;
 
     border: 1px solid var(--icon-prymary-color);
+    transition: color var(--tran-dur-and-tim-fun);
+
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     color: var(--icon-prymary-color);
-    transition: color var(--tran-dur-and-tim-fun);
 
     &:hover, &:focus {
             color: var(--accent-color);
