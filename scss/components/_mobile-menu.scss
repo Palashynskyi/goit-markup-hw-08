@@ -6,6 +6,10 @@
     margin-left: auto;
     border-color: transparent;
 
+        &:hover, &:focus-within {
+            fill: var(--accent-color);
+        }
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -54,6 +58,11 @@
     background-color: var(--second-btn-color);
     border: transparent;
 
+        &:hover,
+        &:focus-within {
+            color: var(--accent-color);
+        }
+
     @media screen and (min-width: 767px) {
         display: none;
     }
@@ -80,6 +89,10 @@
         letter-spacing: 0.02em;
 
         color: var(--second-text-color);
+
+        &:hover, &:focus-within {
+            color: var(--accent-color);
+        }
     }
 }
 
@@ -133,6 +146,10 @@
     letter-spacing: 0.02em;
     
     color: var(--primary-text-color);
+
+        &:hover, &:focus-within {
+            color: var(--accent-color);
+        }
 }
 
 // ___________________________________
@@ -190,3 +207,13 @@
     line-height: 22px;
     color: var(--accent-color);
 }
+
+// .modal-close-icon {
+
+//     &:hover,
+//     &:focus-within {
+//         color: var(--accent-color);
+//     }
+
+// }
+      

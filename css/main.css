@@ -771,6 +771,9 @@ template {
 .button-icon {
   fill: currentColor;
 }
+.button-icon:hover, .button-icon:focus-within {
+  fill: var(--accent-color);
+}
 
 .client-tittle {
   font-family: "Roboto";
@@ -1463,6 +1466,9 @@ template {
   margin-left: auto;
   border-color: transparent;
 }
+.header_burger--menu:hover, .header_burger--menu:focus-within {
+  fill: var(--accent-color);
+}
 @media screen and (min-width: 768px) {
   .header_burger--menu {
     display: none;
@@ -1522,6 +1528,9 @@ template {
   background-color: var(--second-btn-color);
   border: transparent;
 }
+.menu-toggle:hover, .menu-toggle:focus-within {
+  color: var(--accent-color);
+}
 @media screen and (min-width: 767px) {
   .menu-toggle {
     display: none;
@@ -1541,6 +1550,9 @@ template {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+}
+.mobile-nav__item:hover, .mobile-nav__item:focus-within {
+  color: var(--accent-color);
 }
 
 .mobile-nav__item {
@@ -1586,6 +1598,9 @@ template {
   line-height: 1.1666;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.mobile-contacts-nav__link_mail:hover, .mobile-contacts-nav__link_mail:focus-within {
+  color: var(--accent-color);
 }
 
 .mobile-social--wrapper {
