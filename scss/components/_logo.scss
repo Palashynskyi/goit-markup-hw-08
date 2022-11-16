@@ -2,15 +2,18 @@
     display: flex;
     text-decoration: none;
     color: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
 
     @media screen and (min-width: 768px) {
        margin-right: 88px;
+       padding-top: 26px;
+       padding-bottom: 26px;
     }
 
     &__text-web {
         display: block;
-        padding-top: 16px;
-        padding-bottom: 16px;
         color: var(--accent-color);
         font-family: 'Raleway';
         font-style: normal;
@@ -28,8 +31,6 @@
 
     &__text-studio {
         display: block;
-        padding-top: 16px;
-        padding-bottom: 16px;
         color: var(--logo-black-color);
         font-family: 'Raleway';
         font-style: normal;
@@ -37,12 +38,13 @@
         font-size: 24px;
         line-height: 1.1666;
         letter-spacing: 0.03em;
-
+        
         @media screen and (min-width: 1200px) {
             font-weight: 700;
             font-size: 26px;
             line-height: 1.1920;
-        }    
+        }
+
     }
 }
 

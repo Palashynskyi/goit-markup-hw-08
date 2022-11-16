@@ -467,7 +467,21 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .about__item:nth-last-child(n+2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about__item:nth-last-child(n+3) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__item {
+    margin-bottom: 0;
+  }
 }
 
 .about__overlay {
@@ -491,15 +505,15 @@ template {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 10px;
 }
 
 .about__position {
-  margin-top: 10px;
   margin-bottom: 16px;
 }
 
 .content-tittle {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -601,7 +615,7 @@ template {
 }
 
 .advantages__item {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantages__item {
@@ -611,11 +625,12 @@ template {
 @media screen and (min-width: 1200px) {
   .advantages__item {
     width: calc((100% - 90px) / 4);
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
 .advantages__tittle {
+  margin-top: 30px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -625,6 +640,11 @@ template {
   text-transform: uppercase;
   color: var(--second-text-color);
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__tittle {
+    text-align: left;
+  }
 }
 
 .advantages__text {
@@ -645,7 +665,6 @@ template {
   height: 120px;
   background-color: var(--features-card-bg);
   border-radius: 4px;
-  margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1389,16 +1408,18 @@ template {
   display: flex;
   text-decoration: none;
   color: inherit;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 .logo__text-web {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: var(--accent-color);
   font-family: "Raleway";
   font-style: normal;
@@ -1416,8 +1437,6 @@ template {
 }
 .logo__text-studio {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: var(--logo-black-color);
   font-family: "Raleway";
   font-style: normal;
@@ -2129,20 +2148,29 @@ template {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 0 0 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0;
+    padding: 0 0 94px 0;
+  }
+}
+
+.section--padding-top {
+  padding: 60px 0 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section--padding-top {
+    padding: 94px 0 94px 0;
   }
 }
 
 .section--no-padding {
-  padding: 60px 0 30px 0;
+  padding: 0 0 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section--no-padding {
-    padding: 94px 0 0 0;
+    padding: 0 0 90px 0;
   }
 }
 
