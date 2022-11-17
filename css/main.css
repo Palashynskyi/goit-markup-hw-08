@@ -773,6 +773,12 @@ template {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
 }
+@media screen and (max-width: 1200px) {
+  .button--footer-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .button-icon {
   fill: currentColor;
@@ -1047,7 +1053,7 @@ template {
 }
 @media screen and (min-width: 768px) {
   .subscribe-thumb {
-    width: 100%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2204,13 +2210,13 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
+  gap: 10px;
 }
 
 .social-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 10px;
   color: var(--icon-prymary-color);
   width: 44px;
   height: 44px;
