@@ -726,10 +726,10 @@ template {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
-  -webkit-transition: background-color var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
-  transition: background-color var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
-  transition: background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun);
-  transition: background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
+  -webkit-transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
+  transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
+  transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun);
+  transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun), -webkit-box-shadow var(--tran-dur-and-tim-fun);
 }
 .button--filter-btn:hover, .button--filter-btn:focus {
   color: var(--second-btn-color);
