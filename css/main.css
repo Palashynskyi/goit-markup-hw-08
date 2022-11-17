@@ -776,6 +776,9 @@ template {
 
 .button-icon {
   fill: currentColor;
+  position: absolute;
+  top: -10px;
+  right: 0px;
 }
 .button-icon:hover, .button-icon:focus-within {
   fill: var(--accent-color);
@@ -1138,6 +1141,7 @@ template {
 }
 
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1491,6 +1495,7 @@ template {
 }
 
 .menu-container {
+  position: relative;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1552,7 +1557,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  right: 15px;
+  right: -4px;
   top: 10px;
   background-color: var(--second-btn-color);
   border: transparent;

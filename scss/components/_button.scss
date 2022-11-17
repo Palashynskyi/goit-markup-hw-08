@@ -87,9 +87,12 @@
 
 .button-icon {
     fill: currentColor;
-        &:hover,
-            &:focus-within {
-                fill: var(--accent-color);
-                
-            }
+    position: absolute;
+    top: -10px;
+    right: 0px;
+
+    
+        &:hover, &:focus-within {
+            fill: var(--accent-color);
+        }
 }
