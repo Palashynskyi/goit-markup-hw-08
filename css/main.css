@@ -919,9 +919,9 @@ template {
             justify-content: flex-start;
     margin: 0 auto;
     text-align: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1011,11 +1011,6 @@ template {
 @media screen and (max-width: 768px) {
   .joined-thumb {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .joined-thumb {
-    margin-bottom: 5px;
   }
 }
 
