@@ -18,7 +18,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    content: "";
+    visibility: visible;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -258,6 +258,7 @@
 }
 
 .backdrop.is-hidden .modal {
+    visibility: hidden;
     transform: translate(-50%, -50%) scale(0.8);
-    transition: transform var(--tran-dur-and-tim-fun);
+    transition: transform var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
 }

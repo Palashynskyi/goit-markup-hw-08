@@ -1703,7 +1703,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  content: "";
+  visibility: visible;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1965,12 +1965,13 @@ template {
 }
 
 .backdrop.is-hidden .modal {
+  visibility: hidden;
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
-  -webkit-transition: -webkit-transform var(--tran-dur-and-tim-fun);
-  transition: -webkit-transform var(--tran-dur-and-tim-fun);
-  transition: transform var(--tran-dur-and-tim-fun);
-  transition: transform var(--tran-dur-and-tim-fun), -webkit-transform var(--tran-dur-and-tim-fun);
+  -webkit-transition: visibility var(--tran-dur-and-tim-fun), -webkit-transform var(--tran-dur-and-tim-fun);
+  transition: visibility var(--tran-dur-and-tim-fun), -webkit-transform var(--tran-dur-and-tim-fun);
+  transition: transform var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
+  transition: transform var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun), -webkit-transform var(--tran-dur-and-tim-fun);
 }
 
 .filter-tittle {
