@@ -17,7 +17,9 @@
 
 .menu-container {
     position: fixed;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vw;
@@ -82,7 +84,6 @@
 
 .mobile-nav--wrapper {
     display: block;
-    margin-bottom: 306px;
 }
 
 .mobile-nav {

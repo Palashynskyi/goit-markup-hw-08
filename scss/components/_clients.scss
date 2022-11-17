@@ -48,7 +48,7 @@
     height: 100%;
 
     border: 1px solid var(--icon-prymary-color);
-    transition: color var(--tran-dur-and-tim-fun);
+    transition: color var(--tran-dur-and-tim-fun), border-color var(--tran-dur-and-tim-fun);
 
     border-radius: 4px;
     align-items: center;
@@ -56,6 +56,7 @@
     color: var(--icon-prymary-color);
 
     &:hover, &:focus {
+
             color: var(--accent-color);
             border-color: var(--accent-color);
             fill: currentColor;
