@@ -1005,9 +1005,6 @@ template {
   color: var(--accent-color);
 }
 
-.joined-thumb {
-  margin-bottom: 99px;
-}
 @media screen and (max-width: 768px) {
   .joined-thumb {
     margin-bottom: 60px;
