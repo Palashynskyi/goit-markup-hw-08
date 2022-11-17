@@ -60,7 +60,8 @@
     align-items: center;
     justify-content: center;
     height: 50px;
-    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
     border-radius: 4px;
 
     cursor: pointer;
@@ -81,17 +82,18 @@
         background-color: var(--second-bt-bg);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
     }
+
 }
 
-.button-wraper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+// .button-wraper {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
 
-    @media screen and (min-width: 1200px) {
-        width: 200px;
-    }
-}
+//     @media screen and (min-width: 1200px) {
+//         width: 200px;
+//     }
+// }
 
 .button-icon {
     fill: currentColor;

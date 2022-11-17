@@ -749,7 +749,8 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
-  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
   border-radius: 4px;
   cursor: pointer;
   color: var(--second-btn-color);
@@ -771,21 +772,6 @@ template {
   background-color: var(--second-bt-bg);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
-}
-
-.button-wraper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .button-wraper {
-    width: 200px;
-  }
 }
 
 .button-icon {
@@ -1010,6 +996,11 @@ template {
 .joined-thumb {
   margin-bottom: 99px;
 }
+@media screen and (max-width: 768px) {
+  .joined-thumb {
+    margin-bottom: 60px;
+  }
+}
 
 .joined-tittle {
   font-family: "Roboto";
@@ -1058,7 +1049,7 @@ template {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-thumb {
-    max-width: 450px;
+    max-width: 569px;
     margin-left: 93px;
   }
 }
@@ -1073,7 +1064,6 @@ template {
   text-transform: uppercase;
   color: var(--second-btn-color);
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .subscribe-tittle {
