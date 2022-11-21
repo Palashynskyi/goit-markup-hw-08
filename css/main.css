@@ -1691,12 +1691,10 @@ template {
 
 .backdrop {
   position: fixed;
-  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
   opacity: 1;
   visibility: visible;
   pointer-events: all;
