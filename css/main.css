@@ -782,7 +782,6 @@ template {
 
 .button-icon {
   fill: currentColor;
-  position: absolute;
   top: -10px;
   right: 0px;
 }
@@ -1520,6 +1519,7 @@ template {
   padding: 48px 40px;
   background-color: var(--second-btn-color);
   z-index: 999;
+  overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1691,6 +1691,7 @@ template {
 
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
