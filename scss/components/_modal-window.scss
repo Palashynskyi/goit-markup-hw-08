@@ -1,6 +1,5 @@
 .backdrop {
     position: fixed;
-    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,9 +9,18 @@
     visibility: visible;
     pointer-events: all;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     overflow: hidden;
     background-color: rgba(14, 13, 13, 0.8);
     transition: opacity var(--tran-dur-and-tim-fun), visibilyty var(--tran-dur-and-tim-fun);
+
+    @media screen and (max-height: 660px) {
+        overflow-y: scroll;
+    }
+
 }
 
 .modal {
@@ -33,6 +41,10 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--tran-dur-and-tim-fun);
+
+    @media screen and (max-height: 610px) {
+        top: 100%;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 528px;

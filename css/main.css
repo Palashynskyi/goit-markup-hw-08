@@ -1691,7 +1691,6 @@ template {
 
 .backdrop {
   position: fixed;
-  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -1700,10 +1699,24 @@ template {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: hidden;
   background-color: rgba(14, 13, 13, 0.8);
   -webkit-transition: opacity var(--tran-dur-and-tim-fun), visibilyty var(--tran-dur-and-tim-fun);
   transition: opacity var(--tran-dur-and-tim-fun), visibilyty var(--tran-dur-and-tim-fun);
+}
+@media screen and (max-height: 660px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
 }
 
 .modal {
@@ -1734,6 +1747,11 @@ template {
   transition: -webkit-transform var(--tran-dur-and-tim-fun);
   transition: transform var(--tran-dur-and-tim-fun);
   transition: transform var(--tran-dur-and-tim-fun), -webkit-transform var(--tran-dur-and-tim-fun);
+}
+@media screen and (max-height: 610px) {
+  .modal {
+    top: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
